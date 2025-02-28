@@ -27,8 +27,13 @@ Understanding customer buying behavior enables businesses to make data-driven de
 ### 3. Methodology
 A structured data science approach was followed, including:
 1. **Data Collection & Preprocessing**
-   - Gathered transactional data from the online retail store.
-   - Cleaned missing values, handled duplicates, and removed outliers.
+   - Used **Excel** for initial data exploration to detect abnormalities.
+   - **Dataset was downloaded as part of the task, not gathered manually.**
+   - Used **Python** to clean missing values, handle duplicates, and divide the data into three parts:
+     - **Successful Products Sold**
+     - **Product Returns**
+     - **Logistics**
+   - **Outliers were handled during the clustering analysis, not initial preprocessing.**
 
 2. **Exploratory Data Analysis (EDA)**
    - Analyzed purchase trends over time (yearly, quarterly, monthly).
@@ -40,10 +45,11 @@ A structured data science approach was followed, including:
    - Applied encoding techniques for categorical variables.
    - Normalized and standardized numerical data for better model performance.
 
-4. **Customer Segmentation** (Using RFM & Clustering)
+4. **Customer & Product Segmentation (Using RFM & Clustering)**
    - Performed Recency, Frequency, and Monetary (RFM) analysis.
-   - Applied K-Means clustering to group customers into meaningful segments.
-   - Visualized and interpreted customer clusters.
+   - Applied **K-Means clustering** to group customers into meaningful segments (**classified as 0, 1, 2**).
+   - Identified high-value customers, regular buyers, and one-time shoppers.
+   - Conducted **product segmentation** to categorize items based on sales trends and demand patterns.
 
 5. **Predictive Classification Model**
    - Implemented machine learning models (Logistic Regression, Random Forest, XGBoost).
@@ -51,11 +57,12 @@ A structured data science approach was followed, including:
    - Evaluated performance using accuracy, precision, recall, and F1-score.
 
 6. **Clustering Analysis**
-   - Used unsupervised learning (K-Means) to segment customers based on shopping patterns.
+   - Used unsupervised learning (**K-Means**) for **customer segmentation and product segmentation.**
    - Determined optimal clusters using the Elbow method and silhouette score.
+   - **Outliers were handled at this stage, not earlier.**
 
 7. **Sales Forecasting (Time Series Analysis)**
-   - Applied Facebook Prophet to predict future sales trends.
+   - Applied **Facebook Prophet** to predict future sales trends.
    - Evaluated forecast accuracy using RMSE and MAPE.
    - Provided insights into expected revenue trends for strategic decision-making.
 
@@ -63,68 +70,22 @@ A structured data science approach was followed, including:
    - Suggested personalized marketing campaigns for different customer segments.
    - Recommended stock optimization strategies based on demand forecasting.
    - Proposed targeted promotions to boost sales for specific product categories.
+   - Suggested engagement strategies for one-time buyers to improve retention.
 
 ## TOOLS AND TECHNOLOGIES
-- **Python** (pandas, numpy, matplotlib, seaborn, scikit-learn, XGBoost, Prophet)
-- **Jupyter Notebook** for data analysis and visualization
-- **Machine Learning Models:** Decision Trees, Random Forest, XGBoost, Logistic Regression
-- **Clustering Techniques:** K-Means Clustering
-- **Time Series Analysis:** Facebook Prophet for sales forecasting
-
-## EXPLORATORY DATA ANALYSIS (EDA)
-### Summary Statistics and Data Insights
-- Identified sales trends over time (yearly, quarterly, and monthly patterns).
-- Examined customer purchase behavior based on days of the week and times of the day.
-- Visualized top-selling products and purchase frequency.
-- Analyzed customer retention based on Recency, Frequency, and Monetary (RFM) metrics.
-
-## FEATURE ENGINEERING
-- **Created new features:**
-  - **Total Sales** = Quantity Sold × Unit Price
-  - **Purchase Period:** Morning, Afternoon, Evening classification
-  - **Days of the Week Analysis**
-- **Outlier Detection and Handling:** Used IQR method to remove anomalies.
-- **Feature Scaling & Encoding:** Standardization and categorical variable encoding.
-
-## PREDICTIVE CLASSIFICATION MODEL
-- **Machine Learning Models Used:**
-  - Logistic Regression
-  - Random Forest
-  - XGBoost
-- **Model Evaluation:**
-  - Accuracy, Precision, Recall, F1-score
-  - Feature importance analysis
-  - Addressed class imbalance with resampling techniques
-
-## CLUSTERING ANALYSIS
-### Customer Segmentation (K-Means Clustering)
-- **Performed RFM Analysis:**
-  - **Recency:** How recently a customer purchased
-  - **Frequency:** How often a customer buys
-  - **Monetary Value:** How much a customer spends
-- **Segmented Customers into Groups:**
-  - High-Value Customers
-  - Regular Buyers
-  - One-Time Shoppers
-- **Visualized Customer Clusters** to understand patterns and marketing opportunities.
-
-## SALES FORECASTING
-### Time Series Forecasting using Facebook Prophet
-- **Trained model on historical sales data** to predict future revenue.
-- **Created future time periods** and forecasted sales for the next months.
-- **Visualized forecast trends** with confidence intervals.
-- **Evaluated Model Accuracy** using RMSE and MAPE.
-
-## CUSTOMER SEGMENTATION REPORT
-- Identified key customer groups based on spending habits.
-- Developed tailored marketing strategies for each segment.
-- Recommended inventory adjustments to align with high-demand periods.
+- **Excel** for initial data exploration and anomaly detection.
+- **Python** (pandas, numpy, matplotlib, seaborn, scikit-learn, XGBoost, Prophet).
+- **Jupyter Notebook** for data analysis and visualization.
+- **Machine Learning Models:** Decision Trees, Random Forest, XGBoost, Logistic Regression.
+- **Clustering Techniques:** K-Means Clustering.
+- **Time Series Analysis:** Facebook Prophet for sales forecasting.
 
 ## BUSINESS INSIGHTS & MARKETING STRATEGY RECOMMENDATIONS
 - Personalized marketing strategies based on customer segments.
 - Dynamic pricing and discounting strategies to maximize revenue.
 - Inventory restocking recommendations based on predictive insights.
 - Customer loyalty programs to retain high-value customers.
+- Targeted engagement strategies to convert one-time buyers into repeat customers.
 
 ## CONCLUSION
 - Data-driven insights enable businesses to optimize their sales strategies.
@@ -138,3 +99,4 @@ A structured data science approach was followed, including:
 3. **Improve Marketing Campaigns:** Personalize recommendations based on customer clusters.
 4. **Monitor Sales Trends:** Use sales forecasting insights for proactive decision-making.
 5. **Enhance Customer Retention:** Identify at-risk customers and implement engagement strategies.
+6. **Convert One-Time Buyers:** Develop engagement tactics such as email follow-ups and special discounts.
