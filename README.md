@@ -17,99 +17,99 @@
 
 ## INTRODUCTION
 ### 1. Objective
-The purpose of this project is to design a predictive model that categorizes online shopping transactions into certain categories and clusters. Utilizing machine learning and clustering techniques, the model will help businesses identify hidden patterns, reduce inventory management complexities, improve customer segmentation, and enhance sales forecasting.
+The objective of this project is to develop a predictive model that categorizes online shopping transactions into certain categories and clusters. Based on machine learning and clustering techniques, the model will allow companies to uncover hidden patterns, make inventory management problems easier, improve customer segmentation, and improve sales forecasts.
 
 ## DATASET OVERVIEW
-The dataset used in this project consists of online retail transactions and contains the following key columns:
+The dataset used in this project is online retail transactions and contains the following primary columns:
 
-- **InvoiceNo:** Unique identifier for each transaction.
-- **StockCode:** Unique product identifier.
-- **Description:** Product name.
-- **Quantity:** Number of products purchased.
-- **InvoiceDate:** Date and time of the transaction.
-- **UnitPrice:** Price per product unit.
-- **CustomerID:** Unique identifier for each customer (some missing values).
-- **Country:** Country where the transaction occurred.
+- **InvoiceNo:** Unique transaction code.
+- **StockCode:** Unique product code.
+- **Description:** Name of product.
+- **Quantity:** Units purchased.
+- **InvoiceDate:** Date and time of transaction.
+- **UnitPrice:** Cost per unit of product.
+- **CustomerID:** Unique customer code (few missing values).
+- **Country:** Country in which transaction was made.
 
 ## DATA QUALITY ASSESSMENT
-Before performing any analysis, a data quality check was conducted to identify key issues:
+A data quality review was first completed before any analysis was done, to identify outstanding issues:
 
 1. **Missing Values:**
-   - CustomerID was missing for several transactions.
-   - Some product descriptions were missing.
+- CustomerID was absent in some transactions.
+   - Product descriptions were absent in some transactions.
 
 2. **Duplicate Entries:**
-   - Identified and removed duplicated rows to ensure data accuracy.
+   - Discovered and removed duplicated rows for improved data accuracy.
 
 3. **Negative & Zero Values:**
-   - Some transactions had negative quantities, indicating **product returns**.
-   - Zero and negative prices were identified and handled accordingly.
+   - Negative quantities were discovered in some transactions, which are **product returns**.
+   - Zero and negative prices were discovered and handled accordingly.
 
 4. **Special Characters & Formatting Issues:**
-   - Some product descriptions contained special characters, which were cleaned.
+- Some product descriptions contained special characters, which were trimmed.
 
 5. **Unspecified Countries:**
-   - Some transactions lacked country information, requiring further review.
+   - There were some transactions without country data, which required re-checking.
 
 ## TOOLS AND TECHNOLOGIES
 - **Excel** for initial data exploration and anomaly detection.
 - **Python** (pandas, numpy, matplotlib, seaborn, scikit-learn, XGBoost, Prophet).
-- **Jupyter Notebook** for data analysis and visualization.
+- **Jupyter Notebook** for visualization and analysis.
 - **Machine Learning Models:** Decision Trees, Random Forest, XGBoost, Logistic Regression.
 - **Clustering Techniques:** K-Means Clustering.
-- **Time Series Analysis:** Facebook Prophet for sales forecasting.
+- **Time Series Analysis:** Facebook Prophet to predict sales. 
 
 ## DATA COLLECTION & PREPROCESSING
-A structured data preprocessing approach was followed to clean and prepare the dataset:
+A formal data preprocessing technique was followed to sanitize and normalize the data:
 
 1. **Handling Missing Values:**
-   - Transactions with missing **CustomerID** were either imputed or excluded based on their relevance.
-   - Missing product descriptions were replaced using **StockCode mappings**.
+   - Transactions with absent **CustomerID** were replaced or removed based on their impact.
+   - Missing product details were replaced by **StockCode mappings**.
 
 2. **Removing Duplicates:**
-   - Identified duplicate transactions and removed them to prevent redundancy.
+   - Duplicate transactions were recognized and removed to exclude redundancy.
 
-3. **Dealing with Negative & Zero Values:**
-   - Negative values in the **Quantity** column were treated as product returns.
-   - Transactions with zero or negative **UnitPrice** were reviewed and handled.
+3. **Processing Negative & Zero Values:**
+   - Negative quantities in the **Quantity** field were processed as product returns.
+   - Transactions with zero or negative **UnitPrice** were checked and resolved.
 
-4. **Standardizing Text Data:**
-   - Removed special characters from product descriptions.
-   - Converted text data to lowercase for consistency.
+4. **Text Data Normalization:**
+   - Product description special characters were trimmed.
+   - Text data were converted to lower case for standardization.
 
-5. **Date Formatting & Extraction:**
-   - Converted **InvoiceDate** to proper datetime format.
-   - Extracted features like **Year, Month, Day, and Hour of Purchase**.
+5. **Formatting & Extraction Dates:**
+   - **InvoiceDate** was formatted into standardized datetime format.
+- Extracted features like **Year, Month, Day, and Hour of Purchase**.
 
 ## EXPLORATORY DATA ANALYSIS (EDA)
-- Analyzed purchase trends over time (yearly, quarterly, monthly).
-- Identified top-selling products and customer purchase behavior.
-- Used visualizations to uncover sales patterns.
+- Compared purchase behaviors across time (yearly, quarterly, month by month).
+- Established top-selling products and customer buying behavior.
+- Used visualizations to expose sales patterns.
 
 ## FEATURE ENGINEERING
 - Created new features (e.g., Total Sales, Purchase Period, Days of the Week).
-- Applied encoding techniques for categorical variables.
-- Normalized and standardized numerical data for better model performance.
+- Used encoding techniques for categorical variables.
+- Normalized and standardized numeric values for better model performance.
 
-## CUSTOMER & PRODUCT SEGMENTATION (USING RFM & CLUSTERING)
+## CUSTOMER & PRODUCT SEGMENTATION (RFM & CLUSTERING)
 - Performed Recency, Frequency, and Monetary (RFM) analysis.
-- Applied **K-Means clustering** to group customers into meaningful segments (**classified as 0, 1, 2**).
-- Identified high-value customers, regular buyers, and one-time shoppers.
-- Conducted **product segmentation** to categorize items based on sales trends and demand patterns.
+- Applied **K-Means clustering** to segment customers into meaningful groups (**marked as 0, 1, 2**).
+- Segmented high-value customers, frequent buyers, and occasional shoppers.
+- Performed **product segmentation** to segment products based on sales patterns and demand trends.
 
 ## PREDICTIVE CLASSIFICATION MODEL
-- Implemented machine learning models (Logistic Regression, Random Forest, XGBoost).
-- Trained models to classify transactions based on customer purchasing behavior.
-- Evaluated performance using accuracy, precision, recall, and F1-score.
+- Applied machine learning algorithms (Logistic Regression, Random Forest, XGBoost).
+- Trained models to forecast customer buying behavior for transaction classification.
+- Compared the performance with accuracy, precision, recall, and F1-score.
 
 ## CLUSTERING ANALYSIS
-- Used unsupervised learning (**K-Means**) for **customer segmentation and product segmentation.**
-- Determined optimal clusters using the Elbow method and silhouette score.
-- **Outliers were handled at this stage, not earlier.**
+- Used unsupervised learning (**K-Means**) for **product segmentation and customer segmentation.**
+- Determined best clusters with the help of the Elbow method and silhouette score.
+- **Outliers were handled here, not earlier.**
 
 ## SALES FORECASTING (TIME SERIES ANALYSIS)
-- Applied **Facebook Prophet** to predict future sales trends.
-- Evaluated forecast accuracy using RMSE and MAPE.
+- Used **Facebook Prophet** to predict future sales trends.
+- Compared the accuracy of the forecasts with RMSE and MAPE.
 - Provided insights into expected revenue trends for strategic decision-making.
 
 ## BUSINESS INSIGHTS & MARKETING STRATEGY RECOMMENDATIONS
@@ -130,5 +130,5 @@ A structured data preprocessing approach was followed to clean and prepare the d
 2. **Stock Management Optimization:** Reduce overstocking and maintain high-demand product availability.
 3. **Improve Marketing Campaigns:** Personalize recommendations based on customer clusters.
 4. **Monitor Sales Trends:** Use sales forecasting insights for proactive decision-making.
-5. **Enhance Customer Retention:** Identify at-risk customers and implement engagement strategies.
-6. **Convert One-Time Buyers:** Develop engagement tactics such as email follow-ups and special discounts.
+5. **Enhance Customer Retention:** Identify customers at risk and implement engagement activities.
+6. **Convert One-Time Buyers into Repeat Buyers:** Develop engagement strategies such as email reminders and special discounts.
