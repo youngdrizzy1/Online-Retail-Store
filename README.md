@@ -110,6 +110,22 @@ The dataset used in this project is online retail transactions and contains the 
 
   ![2](https://github.com/user-attachments/assets/9c7e1a32-9bfa-448d-9e95-a9788871d415)
 
+**Daily Purchase Trend**
+- Highest sales occur on Tuesday and Thursday, with peaks above 2 million.
+- Sales drop significantly on Saturday, reaching near zero, which suggests minimal or no transactions on this day.
+- Sales slightly recover on Sunday but remain lower compared to weekdays.
+- Overall, weekdays have higher sales than weekends, indicating that most transactions happen during the workweek.
+
+  ![5](https://github.com/user-attachments/assets/c8bbb3f7-02b2-413a-b83a-ed0d5633e580)
+
+**Period Of The Day Purchase Trends**
+- Afternoon has the highest sales, peaking around 6 million.
+- Morning follows closely, with sales above 4 million.
+- Sales drop significantly in the evening, suggesting fewer transactions.
+- Night has the lowest sales, almost negligible, indicating little to no business activity.
+
+  ![6](https://github.com/user-attachments/assets/5b92f5ce-8291-47e2-9a98-0a1d344e3165)
+
 **Monthly Purchase Trend**
 - Slow Start: Sales are relatively low in January and February, with fluctuations in the first half of the year.
 - Steady Growth: Sales pick up from May to August, though with slight variations.
