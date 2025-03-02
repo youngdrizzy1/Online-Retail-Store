@@ -235,6 +235,7 @@ After applying clustering, products were grouped into three segments based on th
 
 **Handling Class Imbalance:**
 - Since customer segment is our target, class imbalance was addressed using techniques like oversampling algorithms to prevent bias.
+  
     - Before sampling:
       ![6](https://github.com/user-attachments/assets/83f3aed2-f268-42ac-846b-eb25c61c949d)
 
@@ -300,3 +301,16 @@ The final plot breaks down the sales forecast into key components:
 - Daily Seasonality: Sales rise in the morning and evening, with dips in between.
 
   ![12](https://github.com/user-attachments/assets/70d9e9f3-01dd-4c5b-8f03-4cb857b371ff)
+
+## RECOMMENDATIONS
+- Customer Retention: Implement loyalty programs, discounts, and personalized marketing for high-value customers.
+- Inventory Optimization: Prioritize stocking best-selling products, reduce low-performing items, and bundle slow-movers with popular ones.
+- Sales Strategy: Focus on Q4 promotions and optimize pricing for high-revenue products to maximize seasonal sales.
+- International Expansion: Strengthen marketing efforts in high-performing international markets like Netherlands and Germany.
+- Operational Efficiency: Adjust staffing and logistics to match peak sales periods, especially on weekdays and afternoons.
+- Clustering Utilization: Use customer segmentation insights for targeted marketing and product segmentation to enhance pricing strategies.
+- Forecast-Based Decisions: Leverage sales forecasting to optimize inventory, plan promotions, and prevent stock shortages.
+- Reduce Returns & Errors: Investigate reasons for high return rates and enforce better quality checks.
+
+## CONCLUSION
+This analysis provides key insights into customer behavior, product performance, and sales trends. By leveraging machine learning, clustering, and forecasting, businesses can enhance inventory management, optimize marketing, and improve revenue. Implementing data-driven strategies will drive growth, customer retention, and operational efficiency.
