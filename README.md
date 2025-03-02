@@ -268,6 +268,8 @@ Feature importance reveals which variables most impact the model’s predictions
 - Month, Quarter & Country have moderate impact on predictions.
 - Hour & Days of the Week contribute the least, indicating minimal effect on classification.
 
+  ![8](https://github.com/user-attachments/assets/dd10145d-0753-46f4-97cb-5f0467e1fc98)
+
 **Why It Matters:**
 - Identifies key drivers behind model decisions.
 - Enables dimensionality reduction, improving efficiency.
