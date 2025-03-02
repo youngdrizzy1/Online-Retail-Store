@@ -8,7 +8,7 @@
 - [Exploratory Data Analysis (EDA)](#EDA)
 - [Feature Engineering](#FEATURE-ENGINEERING)
 - [Visualization](#VISUALIZATION)
-- - [Clustering Analysis](#CLUSTERING-ANALYSIS)
+- [Clustering Analysis](#CLUSTERING-ANALYSIS)
 - [Predictive Classification Model](#PREDICTIVE-CLASSIFICATION-MODEL)
 - [Sales Forecasting](#SALES-FORECASTING)
 - [Customer and Product Segmentation](#CUSTOMER-SEGMENTATION-REPORT)
@@ -60,8 +60,8 @@ The dataset used in this project is online retail transactions and contains the 
 - Description: Missing values were identified and handled.
   
 **Removing Negative and Zero Values:**
-- Removed negative Quantity values (product returns).
-- Removed negative UnitPrice values and invalid entries.
+- Classified negative Quantity values as product returns.
+- Removed negative UnitPrice values they identify possible debt and invalid entries.
 - Filtered out zero UnitPrice values.
   
 **Renaming "Unspecified" Country:**
@@ -144,7 +144,9 @@ The dataset used in this project is online retail transactions and contains the 
   ![4](https://github.com/user-attachments/assets/6ff1d401-94d3-4121-a202-06dd05bb5649)
 
 ## CLUSTERING ANALYSIS
-**Customer Segmentation**
+Used unsupervised learning (**K-Means**) for **Customer Segmentation and Product Segmentation.**
+
+### Customer Segmentation
 - Using The RFM Method To Check Customer Behaviour
   - Recency(R): Measures how recently a customer made a purchase.
   - Frequency(F): Measures how often a customer makes a purchase.
@@ -161,10 +163,28 @@ The dataset used in this project is online retail transactions and contains the 
 
   ![7](https://github.com/user-attachments/assets/c8ffafc0-d5ef-40f6-a695-9f5a5281ed63)
 
-**Product Segmentation**
-- Used unsupervised learning (**K-Means**) for **product segmentation and customer segmentation.**
-- Determined best clusters with the help of the Elbow method and silhouette score.
-- **Outliers were handled here, not earlier.**
+**Customer Segments and Strategies**
+After applying clustering, customers were grouped into three segments based on their purchasing behavior:
+
+- Segment 0 (Low-Value, Infrequent Shoppers):
+  - Low total sales, long time since last purchase, and low purchase frequency.
+  - Likely one-time or rarely active customers.
+  - Strategy: Re-engagement campaigns, discounts, and loyalty programs.
+
+- Segment 1 (Medium-Value, Frequent Shoppers)
+- Moderate sales, recent purchases, and medium-to-high purchase frequency.
+- Active customers who shop regularly but don't spend excessively.
+- Strategy: Upselling, bundles, and membership perks to boost spending.
+  
+- Segment 2 (High-Value, Frequent & Loyal Shoppers)
+- Highest sales, very recent purchases, and extremely high frequency.
+- Loyal, high-spending customers.
+- Strategy: Exclusive VIP rewards, personalized offers, and premium services.
+
+  ![8](https://github.com/user-attachments/assets/03b6d3b5-f45a-449f-993e-04797db3b7ce)
+
+### Product Segmentation
+
 
 ## PREDICTIVE CLASSIFICATION MODEL
 - Applied machine learning algorithms (Logistic Regression, Random Forest, XGBoost).
