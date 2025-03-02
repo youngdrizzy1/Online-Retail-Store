@@ -93,13 +93,30 @@ The dataset used in this project is online retail transactions and contains the 
 - Period of the Day
 - Days of the Week
 
-## VISUALIZATION
+## VISUALIZATION AND ISIGHTS
 **Top Selling Products**
 - Top-selling product: REGENCY CAKESTAND 3 TIER
 - High demand for: Paper craft, home decor, and festive items
 - Popular categories: T-light holders, bunting, lights, storage items
 - Stocking strategy: Prioritize best-sellers, bundle related products
+  
   ![1](https://github.com/user-attachments/assets/db66489b-641d-4ceb-a1d8-98dc48de95f2)
+
+**Top 10 Countries by Sales**
+- Dominant Market: United Kingdom has overwhelmingly the highest sales, far exceeding all other countries.
+- Other Key Markets: Netherlands, EIRE (Ireland), Germany, and France follow, but with significantly lower sales.
+- Global Reach: Sales extend beyond Europe to countries like Australia, Japan, and Switzerland.
+- Potential Focus Areas: Expanding marketing efforts in top-performing international markets could drive more growth.
+
+  ![2](https://github.com/user-attachments/assets/9c7e1a32-9bfa-448d-9e95-a9788871d415)
+
+**Monthly Purchase Trend**
+- Slow Start: Sales are relatively low in January and February, with fluctuations in the first half of the year.
+- Steady Growth: Sales pick up from May to August, though with slight variations.
+- Peak Season: Significant sales increase from September onward, peaking in November and December—likely due to holiday shopping.
+- Possible Strategy: Capitalizing on peak months (November-December) with promotions and stock optimization could maximize revenue.
+
+  ![3](https://github.com/user-attachments/assets/3c0b44c6-ee95-4e31-8844-15a18987e7e6)
 
 ## CUSTOMER & PRODUCT SEGMENTATION (RFM & CLUSTERING)
 - Performed Recency, Frequency, and Monetary (RFM) analysis.
