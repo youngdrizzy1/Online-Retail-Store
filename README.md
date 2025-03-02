@@ -12,9 +12,8 @@
 - [Predictive Classification Model](#PREDICTIVE-CLASSIFICATION-MODEL)
 - [Feature Importance Analysis](#FEATURE-IMPORTANCE-ANALYSIS)
 - [Sales Forecasting](#SALES-FORECASTING)
-- [Business Insights & Marketing Strategy Recommendations](#BUSINESS-INSIGHTS-AND-MARKETING-STRATEGY-RECOMMENDATIONS)
-- [Conclusion](#CONCLUSION)
 - [Recommendations](#RECOMMENDATIONS)
+- [Conclusion](#CONCLUSION)
 
 ## INTRODUCTION
 ### Objective
@@ -276,27 +275,28 @@ Feature importance reveals which variables most impact the model’s predictions
 - Provides business insights for targeted marketing.
 
 ## SALES FORECASTING (TIME SERIES ANALYSIS)
-- Used **Facebook Prophet** to predict future sales trends.
-- Compared the accuracy of the forecasts with RMSE and MAPE.
-- Provided insights into expected revenue trends for strategic decision-making.
+**Daily Sales Trend:**
+- There are fluctuations, with noticeable spikes in sales on specific days.
 
-## BUSINESS INSIGHTS & MARKETING STRATEGY RECOMMENDATIONS
-- Personalized marketing strategies based on customer segments.
-- Dynamic pricing and discounting strategies to maximize revenue.
-- Inventory restocking recommendations based on predictive insights.
-- Customer loyalty programs to retain high-value customers.
-- Targeted engagement strategies to convert one-time buyers into repeat customers.
+  ![9](https://github.com/user-attachments/assets/31a1dac9-f7f4-4b60-b1f3-b408fcf5ecaf)
 
-## CONCLUSION
-- Data-driven insights enable businesses to optimize their sales strategies.
-- Predictive modeling improves transaction classification and inventory management.
-- Clustering analysis helps in precise customer targeting for marketing efforts.
-- Sales forecasting provides future revenue estimates for better planning.
+**Building the Forecasting Model:**
+- Facebook Prophet was used for time series forecasting, handling daily, weekly, and yearly seasonality.
+- The model was trained on past sales data to predict future trends.
+  
+**Future Sales Prediction:**
+- A 30-day forecast was generated.
+- Forecasted sales trend, with actual values overlaid.
+- The shaded region represents uncertainty, increasing over time.
 
-## RECOMMENDATIONS
-1. **Target High-Value Customers:** Offer loyalty rewards and exclusive promotions.
-2. **Stock Management Optimization:** Reduce overstocking and maintain high-demand product availability.
-3. **Improve Marketing Campaigns:** Personalize recommendations based on customer clusters.
-4. **Monitor Sales Trends:** Use sales forecasting insights for proactive decision-making.
-5. **Enhance Customer Retention:** Identify customers at risk and implement engagement activities.
-6. **Convert One-Time Buyers into Repeat Buyers:** Develop engagement strategies such as email reminders and special discounts.
+  ![11](https://github.com/user-attachments/assets/ecba1391-8873-4bdd-897e-26653a181254)
+
+**Insights from Forecast Components:**
+The final plot breaks down the sales forecast into key components:
+
+- Trend: A steady upward trend suggests increasing sales over time.
+- Weekly Seasonality: Sales peak early in the week (Monday-Tuesday) and dip on Sundays.
+- Yearly Seasonality: High sales during holiday seasons (November-December) and periodic fluctuations.
+- Daily Seasonality: Sales rise in the morning and evening, with dips in between.
+
+  ![12](https://github.com/user-attachments/assets/70d9e9f3-01dd-4c5b-8f03-4cb857b371ff)
