@@ -86,7 +86,8 @@ The dataset used in this project is online retail transactions and contains the 
 
 ## FEATURE ENGINEERING
 **Created new features:**
-- Total Sales, Year
+- Total Sales
+- Year
 - Quarter
 - Month
 - Hour of the Day
@@ -172,14 +173,14 @@ After applying clustering, customers were grouped into three segments based on t
   - Strategy: Re-engagement campaigns, discounts, and loyalty programs.
 
 - Segment 1 (Medium-Value, Frequent Shoppers)
-- Moderate sales, recent purchases, and medium-to-high purchase frequency.
-- Active customers who shop regularly but don't spend excessively.
-- Strategy: Upselling, bundles, and membership perks to boost spending.
+  - Moderate sales, recent purchases, and medium-to-high purchase frequency.
+  - Active customers who shop regularly but don't spend excessively.
+  - Strategy: Upselling, bundles, and membership perks to boost spending.
   
 - Segment 2 (High-Value, Frequent & Loyal Shoppers)
-- Highest sales, very recent purchases, and extremely high frequency.
-- Loyal, high-spending customers.
-- Strategy: Exclusive VIP rewards, personalized offers, and premium services.
+  - Highest sales, very recent purchases, and extremely high frequency.
+  - Loyal, high-spending customers.
+  - Strategy: Exclusive VIP rewards, personalized offers, and premium services.
 
   ![8](https://github.com/user-attachments/assets/03b6d3b5-f45a-449f-993e-04797db3b7ce)
 
