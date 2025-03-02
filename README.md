@@ -7,6 +7,7 @@
 - [Tools & Technologies Used](#TOOLS-AND-TECHNOLOGIES)
 - [Exploratory Data Analysis (EDA)](#EDA)
 - [Feature Engineering](#FEATURE-ENGINEERING)
+- [Visualization](#VISUALIZATION)
 - [Predictive Classification Model](#PREDICTIVE-CLASSIFICATION-MODEL)
 - [Clustering Analysis](#CLUSTERING-ANALYSIS)
 - [Sales Forecasting](#SALES-FORECASTING)
@@ -91,6 +92,14 @@ The dataset used in this project is online retail transactions and contains the 
 - Hour of the Day
 - Period of the Day
 - Days of the Week
+
+## VISUALIZATION
+**Top Selling Products**
+- Top-selling product: REGENCY CAKESTAND 3 TIER
+- High demand for: Paper craft, home decor, and festive items
+- Popular categories: T-light holders, bunting, lights, storage items
+- Stocking strategy: Prioritize best-sellers, bundle related products
+  ![1](https://github.com/user-attachments/assets/db66489b-641d-4ceb-a1d8-98dc48de95f2)
 
 ## CUSTOMER & PRODUCT SEGMENTATION (RFM & CLUSTERING)
 - Performed Recency, Frequency, and Monetary (RFM) analysis.
