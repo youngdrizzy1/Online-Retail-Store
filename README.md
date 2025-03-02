@@ -8,8 +8,8 @@
 - [Exploratory Data Analysis (EDA)](#EDA)
 - [Feature Engineering](#FEATURE-ENGINEERING)
 - [Visualization](#VISUALIZATION)
+- - [Clustering Analysis](#CLUSTERING-ANALYSIS)
 - [Predictive Classification Model](#PREDICTIVE-CLASSIFICATION-MODEL)
-- [Clustering Analysis](#CLUSTERING-ANALYSIS)
 - [Sales Forecasting](#SALES-FORECASTING)
 - [Customer and Product Segmentation](#CUSTOMER-SEGMENTATION-REPORT)
 - [Business Insights & Marketing Strategy Recommendations](#BUSINESS-INSIGHTS-AND-MARKETING-STRATEGY-RECOMMENDATIONS)
@@ -143,15 +143,33 @@ The dataset used in this project is online retail transactions and contains the 
  
   ![4](https://github.com/user-attachments/assets/6ff1d401-94d3-4121-a202-06dd05bb5649)
 
+## CLUSTERING ANALYSIS
+**Customer Segmentation**
+- Using The RFM Method To Check Customer Behaviour
+  - Recency(R): Measures how recently a customer made a purchase.
+  - Frequency(F): Measures how often a customer makes a purchase.
+  - Monetary Value(M): Measures how much money a customer has spent.
+ 
+- Selecting And Standardizing The Clustering Features
+  - Feature Selection: We select "Recency," "Frequency," and "Monetary Value" as they best represent customer purchasing behavior.
+  - Standardization: Since the features are on different scales we use StandardScaler to normalize the data. This ensures fair distance calculations in clustering algorithms
+
+- Finding The Optimal Number Of Clusters
+  - Clustering requires selecting the right number of clusters (K) for the best customer segmentation.
+  - Elbow Method: Determines the ideal number of clusters by analyzing inertia (WCSS).
+  - Optimal K: Identified at the "elbow point," where adding more clusters shows minimal improvement.
+
+  ![7](https://github.com/user-attachments/assets/c8ffafc0-d5ef-40f6-a695-9f5a5281ed63)
+
+**Product Segmentation**
+- Used unsupervised learning (**K-Means**) for **product segmentation and customer segmentation.**
+- Determined best clusters with the help of the Elbow method and silhouette score.
+- **Outliers were handled here, not earlier.**
+
 ## PREDICTIVE CLASSIFICATION MODEL
 - Applied machine learning algorithms (Logistic Regression, Random Forest, XGBoost).
 - Trained models to forecast customer buying behavior for transaction classification.
 - Compared the performance with accuracy, precision, recall, and F1-score.
-
-## CLUSTERING ANALYSIS
-- Used unsupervised learning (**K-Means**) for **product segmentation and customer segmentation.**
-- Determined best clusters with the help of the Elbow method and silhouette score.
-- **Outliers were handled here, not earlier.**
 
 ## SALES FORECASTING (TIME SERIES ANALYSIS)
 - Used **Facebook Prophet** to predict future sales trends.
