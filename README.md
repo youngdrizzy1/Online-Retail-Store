@@ -16,7 +16,7 @@
 - [Recommendations](#RECOMMENDATIONS)
 
 ## INTRODUCTION
-### 1. Objective
+### Objective
 The objective of this project is to develop a predictive model that categorizes online shopping transactions into certain categories and clusters. Based on machine learning and clustering techniques, the model will allow companies to uncover hidden patterns, make inventory management problems easier, improve customer segmentation, and improve sales forecasts.
 
 ## DATASET OVERVIEW
@@ -32,24 +32,45 @@ The dataset used in this project is online retail transactions and contains the 
 - **Country:** Country in which transaction was made.
 
 ## DATA QUALITY ASSESSMENT
-A data quality review was first completed before any analysis was done, to identify outstanding issues:
+### Identified Issues
 
-1. **Missing Values:**
-- CustomerID was absent in some transactions.
-   - Product descriptions were absent in some transactions.
+**Missing Values:**
+- 1,454 missing values in the Description column.
+- 135,080 missing values in the CustomerID column.
 
-2. **Duplicate Entries:**
-   - Discovered and removed duplicated rows for improved data accuracy.
-
-3. **Negative & Zero Values:**
-   - Negative quantities were discovered in some transactions, which are **product returns**.
-   - Zero and negative prices were discovered and handled accordingly.
-
-4. **Special Characters & Formatting Issues:**
-- Some product descriptions contained special characters, which were trimmed.
-
-5. **Unspecified Countries:**
-   - There were some transactions without country data, which required re-checking.
+**Negative Values:**
+- 10,624 negative values in the Quantity column (indicating product returns).
+- 2 negative values in the UnitPrice column.
+  
+**Zero Values:**
+- 2,515 zero values in the UnitPrice column.
+- Special Characters and Blanks:
+- Special characters and blank values in the Description column.
+  
+**Duplicate Rows:**
+- 5,268 duplicate rows.
+  
+**Unspecified Entries:**
+- Some rows in the Country column had "unspecified" entries.
+  
+## Rectifying Issues
+**Handling Missing Values:**
+- CustomerID: Missing values were handled using forward fill.
+- Description: Missing values were identified and handled.
+  
+**Removing Negative and Zero Values:**
+- Removed negative Quantity values (product returns).
+- Removed negative UnitPrice values and invalid entries.
+- Filtered out zero UnitPrice values.
+  
+**Renaming "Unspecified" Country:**
+- "Unspecified" country entries were renamed to "Unknown" for clarity.
+  
+**Removing Duplicates:**
+- Dropped 5,268 duplicate rows to ensure data accuracy.
+  
+**Standardizing Product Descriptions:**
+- Renamed the Description column to Product for consistency.
 
 ## TOOLS AND TECHNOLOGIES
 - **Excel** for initial data exploration and anomaly detection.
