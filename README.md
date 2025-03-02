@@ -94,7 +94,7 @@ The dataset used in this project is online retail transactions and contains the 
 - Period of the Day
 - Days of the Week
 
-## VISUALIZATION AND ISIGHTS
+## VISUALIZATION AND INSIGHTS
 **Best-Selling Products: Total Sales & Quantity**
 - Top-selling products: REGENCY CAKESTAND 3 TIER & PAPER CRAFT, LITTLE BIRDIE
 - High revenue but lower quantity sold: REGENCY CAKESTAND 3 TIER – premium pricing
