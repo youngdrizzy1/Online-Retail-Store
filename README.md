@@ -11,7 +11,7 @@
 - [Predictive Classification Model](#PREDICTIVE-CLASSIFICATION-MODEL)
 - [Clustering Analysis](#CLUSTERING-ANALYSIS)
 - [Sales Forecasting](#SALES-FORECASTING)
-- [Customer Segmentation Report](#CUSTOMER-SEGMENTATION-REPORT)
+- [Customer and Product Segmentation](#CUSTOMER-SEGMENTATION-REPORT)
 - [Business Insights & Marketing Strategy Recommendations](#BUSINESS-INSIGHTS-AND-MARKETING-STRATEGY-RECOMMENDATIONS)
 - [Conclusion](#CONCLUSION)
 - [Recommendations](#RECOMMENDATIONS)
@@ -118,11 +118,14 @@ The dataset used in this project is online retail transactions and contains the 
 
   ![3](https://github.com/user-attachments/assets/3c0b44c6-ee95-4e31-8844-15a18987e7e6)
 
-## CUSTOMER & PRODUCT SEGMENTATION (RFM & CLUSTERING)
-- Performed Recency, Frequency, and Monetary (RFM) analysis.
-- Applied **K-Means clustering** to segment customers into meaningful groups (**marked as 0, 1, 2**).
-- Segmented high-value customers, frequent buyers, and occasional shoppers.
-- Performed **product segmentation** to segment products based on sales patterns and demand trends.
+**Quarter of the year trend**
+- Gradual Growth: Sales increase steadily from Q1 to Q3, indicating a consistent upward trend.
+- Major Surge in Q4: A sharp rise in Q4 sales, likely due to holiday shopping (Black Friday, Christmas).
+- Strategic Focus:
+  - Boost marketing and inventory for Q4 to maximize sales.
+  - Identify ways to improve performance in Q1 and Q2 (e.g., seasonal promotions).
+ 
+  ![4](https://github.com/user-attachments/assets/6ff1d401-94d3-4121-a202-06dd05bb5649)
 
 ## PREDICTIVE CLASSIFICATION MODEL
 - Applied machine learning algorithms (Logistic Regression, Random Forest, XGBoost).
