@@ -80,37 +80,17 @@ The dataset used in this project is online retail transactions and contains the 
 - **Clustering Techniques:** K-Means Clustering.
 - **Time Series Analysis:** Facebook Prophet to predict sales. 
 
-## DATA COLLECTION & PREPROCESSING
-A formal data preprocessing technique was followed to sanitize and normalize the data:
-
-1. **Handling Missing Values:**
-   - Transactions with absent **CustomerID** were replaced or removed based on their impact.
-   - Missing product details were replaced by **StockCode mappings**.
-
-2. **Removing Duplicates:**
-   - Duplicate transactions were recognized and removed to exclude redundancy.
-
-3. **Processing Negative & Zero Values:**
-   - Negative quantities in the **Quantity** field were processed as product returns.
-   - Transactions with zero or negative **UnitPrice** were checked and resolved.
-
-4. **Text Data Normalization:**
-   - Product description special characters were trimmed.
-   - Text data were converted to lower case for standardization.
-
-5. **Formatting & Extraction Dates:**
-   - **InvoiceDate** was formatted into standardized datetime format.
-- Extracted features like **Year, Month, Day, and Hour of Purchase**.
-
 ## EXPLORATORY DATA ANALYSIS (EDA)
-- Compared purchase behaviors across time (yearly, quarterly, month by month).
-- Established top-selling products and customer buying behavior.
-- Used visualizations to expose sales patterns.
+
 
 ## FEATURE ENGINEERING
-- Created new features (e.g., Total Sales, Purchase Period, Days of the Week).
-- Used encoding techniques for categorical variables.
-- Normalized and standardized numeric values for better model performance.
+**Created new features:**
+- Total Sales, Year
+- Quarter
+- Month
+- Hour of the Day
+- Period of the Day
+- Days of the Week
 
 ## CUSTOMER & PRODUCT SEGMENTATION (RFM & CLUSTERING)
 - Performed Recency, Frequency, and Monetary (RFM) analysis.
