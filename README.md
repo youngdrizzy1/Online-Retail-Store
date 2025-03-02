@@ -54,7 +54,7 @@ The dataset used in this project is online retail transactions and contains the 
 **Unspecified Entries:**
 - Some rows in the Country column had "unspecified" entries.
   
-## Rectifying Issues
+## Rectified Issues
 **Handling Missing Values:**
 - CustomerID: Missing values were handled using forward fill.
 - Description: Missing values were identified and handled.
@@ -95,13 +95,14 @@ The dataset used in this project is online retail transactions and contains the 
 - Days of the Week
 
 ## VISUALIZATION AND ISIGHTS
-**Top Selling Products**
-- Top-selling product: REGENCY CAKESTAND 3 TIER
-- High demand for: Paper craft, home decor, and festive items
-- Popular categories: T-light holders, bunting, lights, storage items
-- Stocking strategy: Prioritize best-sellers, bundle related products
+**Best-Selling Products: Total Sales & Quantity**
+- Top-selling products: REGENCY CAKESTAND 3 TIER & PAPER CRAFT, LITTLE BIRDIE
+- High revenue but lower quantity sold: REGENCY CAKESTAND 3 TIER – premium pricing
+- High quantity but lower revenue: WHITE HANGING HEART T-LIGHT HOLDER, RABBIT NIGHT LIGHT – low-cost, bulk-sold items
+- Balanced performer: MEDIUM CERAMIC TOP STORAGE JAR – strong in both sales & quantity
+- Stocking strategy: Prioritize high-revenue products, optimize pricing for bulk-sellers, bundle festive & home decor items
   
-  ![1](https://github.com/user-attachments/assets/db66489b-641d-4ceb-a1d8-98dc48de95f2)
+  ![3](https://github.com/user-attachments/assets/7ec786c9-98a1-466a-b2f3-3c995bbf1a6a)
 
 **Top 10 Countries by Sales**
 - Dominant Market: United Kingdom has overwhelmingly the highest sales, far exceeding all other countries.
@@ -182,7 +183,7 @@ After applying clustering, customers were grouped into three segments based on t
   - Loyal, high-spending customers.
   - Strategy: Exclusive VIP rewards, personalized offers, and premium services.
 
-  ![8](https://github.com/user-attachments/assets/03b6d3b5-f45a-449f-993e-04797db3b7ce)
+  ![1](https://github.com/user-attachments/assets/eea6530b-fcf8-44fc-806a-f854f46aef14)
 
 ### Product Segmentation
 - Using Key Metrics to Group Products
@@ -219,7 +220,7 @@ After applying clustering, products were grouped into three segments based on th
   - High-demand and most profitable products.
   - Strategy: Offer exclusive deals, upselling opportunities, and ensure consistent stock availability.
 
-  ![10](https://github.com/user-attachments/assets/e6ef767f-53e5-4b20-8909-e6fbe584eacd)
+  ![2](https://github.com/user-attachments/assets/928ffec2-c9cb-49e5-b66f-b86cba15a1ae)
 
 ## PREDICTIVE CLASSIFICATION MODEL
 - Applied machine learning algorithms (Logistic Regression, Random Forest, XGBoost).
