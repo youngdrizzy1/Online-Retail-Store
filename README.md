@@ -227,7 +227,7 @@ After applying clustering, products were grouped into three segments based on th
 - Irrelevant features such as transaction details, product information, and customer IDs were removed to avoid redundancy and improve model focus. The target variable (Segment) was also excluded to prevent data leakage.
 
 **Handling Outliers:**
-- Outliers can distort analysis and impact model performance. Winsorization was applied to cap extreme values, reducing their influence while preserving data integrity. 📌 (Boxplots in the first image illustrate outliers.)
+- Outliers can distort analysis and impact model performance. Winsorization was applied to cap extreme values, reducing their influence while preserving data integrity.
 
   ![4](https://github.com/user-attachments/assets/c4fe9c0e-57c8-4548-93dc-4a0eeece6e45)
 
@@ -249,7 +249,7 @@ After applying clustering, products were grouped into three segments based on th
 - A RandomForestClassifier was trained, leveraging multiple decision trees for improved accuracy and reduced overfitting.
 
 **Predictions & Model Evaluation:**
-- The model was assessed using a classification report and confusion matrix. 📌 (The second image displays the confusion matrix.)
+- The model was assessed using a classification report and confusion matrix.
 
 **Confusion Matrix Analysis:**
 - Class 0 (Majority Class): 85,097 correct, 256 misclassified as Class 1, 3 as Class 2.
@@ -258,6 +258,20 @@ After applying clustering, products were grouped into three segments based on th
 🔹 Overall, the model performed well, but misclassifications suggest potential improvements through hyperparameter tuning and better feature engineering.
 
   ![5](https://github.com/user-attachments/assets/50088437-4cf5-4cbc-8028-f4c975fefcf5)
+
+## FEATURE IMPORTANCE ANALYSIS
+Feature importance reveals which variables most impact the model’s predictions. The RandomForestClassifier ranks features based on their influence using feature_importances_.
+
+**Key Insights:**
+- Recency is the top predictor, showing recent purchases strongly influence customer behavior.
+- Monetary Value & Frequency are crucial, highlighting spending and shopping habits.
+- Month, Quarter & Country have moderate impact on predictions.
+- Hour & Days of the Week contribute the least, indicating minimal effect on classification.
+
+**Why It Matters:**
+- Identifies key drivers behind model decisions.
+- Enables dimensionality reduction, improving efficiency.
+- Provides business insights for targeted marketing.
 
 ## SALES FORECASTING (TIME SERIES ANALYSIS)
 - Used **Facebook Prophet** to predict future sales trends.
