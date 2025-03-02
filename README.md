@@ -223,9 +223,41 @@ After applying clustering, products were grouped into three segments based on th
   ![2](https://github.com/user-attachments/assets/928ffec2-c9cb-49e5-b66f-b86cba15a1ae)
 
 ## PREDICTIVE CLASSIFICATION MODEL
-- Applied machine learning algorithms (Logistic Regression, Random Forest, XGBoost).
-- Trained models to forecast customer buying behavior for transaction classification.
-- Compared the performance with accuracy, precision, recall, and F1-score.
+**Feature Selection:**
+- Irrelevant features such as transaction details, product information, and customer IDs were removed to avoid redundancy and improve model focus. The target variable (Segment) was also excluded to prevent data leakage.
+
+**Handling Outliers:**
+- Outliers can distort analysis and impact model performance. Winsorization was applied to cap extreme values, reducing their influence while preserving data integrity. 📌 (Boxplots in the first image illustrate outliers.)
+
+  ![4](https://github.com/user-attachments/assets/c4fe9c0e-57c8-4548-93dc-4a0eeece6e45)
+
+**Feature Encoding:**
+- Categorical variables like Month and Day of the Week were encoded into numerical values, allowing the model to process them effectively.
+
+**Handling Class Imbalance:**
+- Since customer segment is our target, class imbalance was addressed using techniques like oversampling algorithms to prevent bias.
+    - Before sampling:
+      ![6](https://github.com/user-attachments/assets/83f3aed2-f268-42ac-846b-eb25c61c949d)
+
+    - After sampling:
+      ![7](https://github.com/user-attachments/assets/19955e2d-d6c6-487a-a522-b13e4bbb5854)
+
+**Train-Test Split:**
+- The dataset was split into training (learning patterns) and testing (assessing generalization) sets. This prevents overfitting and ensures robust model evaluation.
+
+**Model Training:**
+- A RandomForestClassifier was trained, leveraging multiple decision trees for improved accuracy and reduced overfitting.
+
+**Predictions & Model Evaluation:**
+- The model was assessed using a classification report and confusion matrix. 📌 (The second image displays the confusion matrix.)
+
+**Confusion Matrix Analysis:**
+- Class 0 (Majority Class): 85,097 correct, 256 misclassified as Class 1, 3 as Class 2.
+- Class 1: 8,151 correct, 15 misclassified as Class 0.
+- Class 2: 11,010 correct, 5 misclassified as Class 0.
+🔹 Overall, the model performed well, but misclassifications suggest potential improvements through hyperparameter tuning and better feature engineering.
+
+  ![5](https://github.com/user-attachments/assets/50088437-4cf5-4cbc-8028-f4c975fefcf5)
 
 ## SALES FORECASTING (TIME SERIES ANALYSIS)
 - Used **Facebook Prophet** to predict future sales trends.
